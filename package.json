@@ -21,8 +21,8 @@
   "homepage": "https://github.com/TelegramIL/imdbbot#readme",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
+  },
+  "scripts": {
+  "start": "node index.js"
   }
-    "scripts": {
-    "start": "node index.js"
-	}
 }

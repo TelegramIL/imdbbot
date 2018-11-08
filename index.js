@@ -6,7 +6,7 @@ var token = '770209111:AAHiSJjDWmJheL1zdVPLvanwpecG6-92bkE';
 var bot = new TelegramBot(token, {polling: true});
 
 // Написать мне ... (/echo Hello World! - пришлет сообщение с этим приветствием.)
-bot.onText(//echo (.+)/, function (msg, match) {
+bot.onText(/\/echo (.+)/, function (msg, match) {
     var fromId = msg.from.id;
     var resp = match[1];
     bot.sendMessage(fromId, resp);
